@@ -75,6 +75,7 @@ class NewVisitorTest(LiveServerTestCase):
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Buy milk')
         inputbox.send_keys(Keys.ENTER)
+        time.sleep(1)
 
         # 弗兰西斯获得了他的唯一URL
         francis_list_url = self.browser.current_url
